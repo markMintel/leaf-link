@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		233AE2212BEFE9BB00371AF4 /* LeafLinkLifeLineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233AE2202BEFE9BB00371AF4 /* LeafLinkLifeLineApp.swift */; };
+		233AE2232BEFE9BB00371AF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233AE2222BEFE9BB00371AF4 /* ContentView.swift */; };
+		233AE2252BEFE9BB00371AF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 233AE2242BEFE9BB00371AF4 /* Assets.xcassets */; };
+		233AE2282BEFE9BB00371AF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 233AE2272BEFE9BB00371AF4 /* Preview Assets.xcassets */; };
+		233AE2322BEFE9BC00371AF4 /* LeafLinkLifeLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233AE2312BEFE9BC00371AF4 /* LeafLinkLifeLineTests.swift */; };
+		233AE23C2BEFE9BC00371AF4 /* LeafLinkLifeLineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233AE23B2BEFE9BC00371AF4 /* LeafLinkLifeLineUITests.swift */; };
+		233AE23E2BEFE9BC00371AF4 /* LeafLinkLifeLineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233AE23D2BEFE9BC00371AF4 /* LeafLinkLifeLineUITestsLaunchTests.swift */; };
+		233AE2522BEFF43C00371AF4 /* ImageOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233AE24E2BEFF43C00371AF4 /* ImageOffset.swift */; };
+		233AE2532BEFF43C00371AF4 /* appColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233AE24F2BEFF43C00371AF4 /* appColor.swift */; };
+		233AE25C2BF2DEC400371AF4 /* ButtonLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233AE2592BF2DEC400371AF4 /* ButtonLabelView.swift */; };
+		233AE25D2BF2DEC400371AF4 /* TextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233AE25A2BF2DEC400371AF4 /* TextInputView.swift */; };
+		233AE25E2BF2DEC400371AF4 /* SecureInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233AE25B2BF2DEC400371AF4 /* SecureInputView.swift */; };
+		23474D092C038893004BB07A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23474D082C038893004BB07A /* WelcomeView.swift */; };
+		23474D0B2C04C55B004BB07A /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23474D0A2C04C55B004BB07A /* CustomTabBar.swift */; };
+		23474D0D2C04C5FD004BB07A /* MainHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23474D0C2C04C5FD004BB07A /* MainHomeView.swift */; };
+		23474D102C04C639004BB07A /* AddPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23474D0E2C04C639004BB07A /* AddPlantView.swift */; };
+		23474D142C04C6B1004BB07A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23474D132C04C6B1004BB07A /* MainView.swift */; };
+		23474D172C050FE4004BB07A /* userDM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23474D152C050FE4004BB07A /* userDM.xcdatamodeld */; };
+		23474D1B2C052328004BB07A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23474D1A2C052328004BB07A /* CoreDataManager.swift */; };
+		23474D1D2C052F13004BB07A /* PlantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23474D1C2C052F13004BB07A /* PlantViewModel.swift */; };
+		23474D1F2C054525004BB07A /* ZeroPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23474D1E2C054525004BB07A /* ZeroPlantView.swift */; };
+		23474D212C054ABD004BB07A /* ImageChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23474D202C054ABD004BB07A /* ImageChoiceView.swift */; };
+		23474D272C06AD33004BB07A /* SinglePlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23474D262C06AD33004BB07A /* SinglePlantView.swift */; };
+		23474D292C074EEF004BB07A /* DetailPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23474D282C074EEF004BB07A /* DetailPlantView.swift */; };
+		23474D2B2C0A4552004BB07A /* PlantEnvObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23474D2A2C0A4552004BB07A /* PlantEnvObj.swift */; };
+		23474D2D2C0A9BBA004BB07A /* TwoPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23474D2C2C0A9BBA004BB07A /* TwoPlantView.swift */; };
+		23474D2F2C0D52BB004BB07A /* CoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23474D2E2C0D52BB004BB07A /* CoreViewModel.swift */; };
+		23474D312C0E516D004BB07A /* ThreePlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23474D302C0E516D004BB07A /* ThreePlantView.swift */; };
+		23474D332C0E59C8004BB07A /* FourPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23474D322C0E59C8004BB07A /* FourPlantView.swift */; };
+		23474D3A2C0E5EFE004BB07A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23474D392C0E5EFE004BB07A /* Settings.swift */; };
+		23474D3C2C0FEAD8004BB07A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23474D3B2C0FEAD8004BB07A /* HomeView.swift */; };
+		23474D3E2C14A790004BB07A /* MultiplantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23474D3D2C14A790004BB07A /* MultiplantView.swift */; };
+		23474D422C17A8D3004BB07A /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23474D412C17A8D3004BB07A /* LaunchView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		233AE22E2BEFE9BC00371AF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 233AE2152BEFE9BB00371AF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 233AE21C2BEFE9BB00371AF4;
+			remoteInfo = LeafLinkLifeLine;
+		};
+		233AE2382BEFE9BC00371AF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 233AE2152BEFE9BB00371AF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 233AE21C2BEFE9BB00371AF4;
+			remoteInfo = LeafLinkLifeLine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		233AE21D2BEFE9BB00371AF4 /* LeafLinkLifeLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeafLinkLifeLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		233AE2202BEFE9BB00371AF4 /* LeafLinkLifeLineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafLinkLifeLineApp.swift; sourceTree = "<group>"; };
+		233AE2222BEFE9BB00371AF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		233AE2242BEFE9BB00371AF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		233AE2272BEFE9BB00371AF4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		233AE22D2BEFE9BC00371AF4 /* LeafLinkLifeLineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeafLinkLifeLineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		233AE2312BEFE9BC00371AF4 /* LeafLinkLifeLineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafLinkLifeLineTests.swift; sourceTree = "<group>"; };
+		233AE2372BEFE9BC00371AF4 /* LeafLinkLifeLineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeafLinkLifeLineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		233AE23B2BEFE9BC00371AF4 /* LeafLinkLifeLineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafLinkLifeLineUITests.swift; sourceTree = "<group>"; };
+		233AE23D2BEFE9BC00371AF4 /* LeafLinkLifeLineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafLinkLifeLineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		233AE24E2BEFF43C00371AF4 /* ImageOffset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageOffset.swift; sourceTree = "<group>"; };
+		233AE24F2BEFF43C00371AF4 /* appColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = appColor.swift; sourceTree = "<group>"; };
+		233AE2592BF2DEC400371AF4 /* ButtonLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonLabelView.swift; sourceTree = "<group>"; };
+		233AE25A2BF2DEC400371AF4 /* TextInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputView.swift; sourceTree = "<group>"; };
+		233AE25B2BF2DEC400371AF4 /* SecureInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureInputView.swift; sourceTree = "<group>"; };
+		23474D082C038893004BB07A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		23474D0A2C04C55B004BB07A /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		23474D0C2C04C5FD004BB07A /* MainHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainHomeView.swift; sourceTree = "<group>"; };
+		23474D0E2C04C639004BB07A /* AddPlantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlantView.swift; sourceTree = "<group>"; };
+		23474D132C04C6B1004BB07A /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		23474D162C050FE4004BB07A /* userDM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = userDM.xcdatamodel; sourceTree = "<group>"; };
+		23474D1A2C052328004BB07A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		23474D1C2C052F13004BB07A /* PlantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewModel.swift; sourceTree = "<group>"; };
+		23474D1E2C054525004BB07A /* ZeroPlantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeroPlantView.swift; sourceTree = "<group>"; };
+		23474D202C054ABD004BB07A /* ImageChoiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageChoiceView.swift; sourceTree = "<group>"; };
+		23474D262C06AD33004BB07A /* SinglePlantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglePlantView.swift; sourceTree = "<group>"; };
+		23474D282C074EEF004BB07A /* DetailPlantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPlantView.swift; sourceTree = "<group>"; };
+		23474D2A2C0A4552004BB07A /* PlantEnvObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantEnvObj.swift; sourceTree = "<group>"; };
+		23474D2C2C0A9BBA004BB07A /* TwoPlantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoPlantView.swift; sourceTree = "<group>"; };
+		23474D2E2C0D52BB004BB07A /* CoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreViewModel.swift; sourceTree = "<group>"; };
+		23474D302C0E516D004BB07A /* ThreePlantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreePlantView.swift; sourceTree = "<group>"; };
+		23474D322C0E59C8004BB07A /* FourPlantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourPlantView.swift; sourceTree = "<group>"; };
+		23474D392C0E5EFE004BB07A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		23474D3B2C0FEAD8004BB07A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		23474D3D2C14A790004BB07A /* MultiplantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplantView.swift; sourceTree = "<group>"; };
+		23474D412C17A8D3004BB07A /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		233AE21A2BEFE9BB00371AF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		233AE22A2BEFE9BC00371AF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		233AE2342BEFE9BC00371AF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		233AE2142BEFE9BB00371AF4 = {
+			isa = PBXGroup;
+			children = (
+				233AE21F2BEFE9BB00371AF4 /* LeafLinkLifeLine */,
+				233AE2302BEFE9BC00371AF4 /* LeafLinkLifeLineTests */,
+				233AE23A2BEFE9BC00371AF4 /* LeafLinkLifeLineUITests */,
+				233AE21E2BEFE9BB00371AF4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		233AE21E2BEFE9BB00371AF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				233AE21D2BEFE9BB00371AF4 /* LeafLinkLifeLine.app */,
+				233AE22D2BEFE9BC00371AF4 /* LeafLinkLifeLineTests.xctest */,
+				233AE2372BEFE9BC00371AF4 /* LeafLinkLifeLineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		233AE21F2BEFE9BB00371AF4 /* LeafLinkLifeLine */ = {
+			isa = PBXGroup;
+			children = (
+				233AE24C2BEFEA3200371AF4 /* ViewModels */,
+				233AE24B2BEFEA2600371AF4 /* Models */,
+				233AE24A2BEFEA1E00371AF4 /* Views */,
+				233AE2202BEFE9BB00371AF4 /* LeafLinkLifeLineApp.swift */,
+				233AE2222BEFE9BB00371AF4 /* ContentView.swift */,
+				233AE2242BEFE9BB00371AF4 /* Assets.xcassets */,
+				233AE2262BEFE9BB00371AF4 /* Preview Content */,
+			);
+			path = LeafLinkLifeLine;
+			sourceTree = "<group>";
+		};
+		233AE2262BEFE9BB00371AF4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				233AE2272BEFE9BB00371AF4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		233AE2302BEFE9BC00371AF4 /* LeafLinkLifeLineTests */ = {
+			isa = PBXGroup;
+			children = (
+				233AE2312BEFE9BC00371AF4 /* LeafLinkLifeLineTests.swift */,
+			);
+			path = LeafLinkLifeLineTests;
+			sourceTree = "<group>";
+		};
+		233AE23A2BEFE9BC00371AF4 /* LeafLinkLifeLineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				233AE23B2BEFE9BC00371AF4 /* LeafLinkLifeLineUITests.swift */,
+				233AE23D2BEFE9BC00371AF4 /* LeafLinkLifeLineUITestsLaunchTests.swift */,
+			);
+			path = LeafLinkLifeLineUITests;
+			sourceTree = "<group>";
+		};
+		233AE24A2BEFEA1E00371AF4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23474D342C0E5C95004BB07A /* HomeViews */,
+				23474D122C04C64D004BB07A /* Utils */,
+				23474D0E2C04C639004BB07A /* AddPlantView.swift */,
+				23474D282C074EEF004BB07A /* DetailPlantView.swift */,
+				23474D202C054ABD004BB07A /* ImageChoiceView.swift */,
+				23474D0C2C04C5FD004BB07A /* MainHomeView.swift */,
+				23474D132C04C6B1004BB07A /* MainView.swift */,
+				23474D082C038893004BB07A /* WelcomeView.swift */,
+				23474D392C0E5EFE004BB07A /* Settings.swift */,
+				23474D3B2C0FEAD8004BB07A /* HomeView.swift */,
+				23474D412C17A8D3004BB07A /* LaunchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		233AE24B2BEFEA2600371AF4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				233AE24F2BEFF43C00371AF4 /* appColor.swift */,
+				233AE24E2BEFF43C00371AF4 /* ImageOffset.swift */,
+				23474D152C050FE4004BB07A /* userDM.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		233AE24C2BEFEA3200371AF4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				23474D1A2C052328004BB07A /* CoreDataManager.swift */,
+				23474D1C2C052F13004BB07A /* PlantViewModel.swift */,
+				23474D2A2C0A4552004BB07A /* PlantEnvObj.swift */,
+				23474D2E2C0D52BB004BB07A /* CoreViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		23474D122C04C64D004BB07A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				233AE25A2BF2DEC400371AF4 /* TextInputView.swift */,
+				233AE25B2BF2DEC400371AF4 /* SecureInputView.swift */,
+				23474D0A2C04C55B004BB07A /* CustomTabBar.swift */,
+				233AE2592BF2DEC400371AF4 /* ButtonLabelView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		23474D342C0E5C95004BB07A /* HomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				23474D1E2C054525004BB07A /* ZeroPlantView.swift */,
+				23474D262C06AD33004BB07A /* SinglePlantView.swift */,
+				23474D302C0E516D004BB07A /* ThreePlantView.swift */,
+				23474D322C0E59C8004BB07A /* FourPlantView.swift */,
+				23474D2C2C0A9BBA004BB07A /* TwoPlantView.swift */,
+				23474D3D2C14A790004BB07A /* MultiplantView.swift */,
+			);
+			path = HomeViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		233AE21C2BEFE9BB00371AF4 /* LeafLinkLifeLine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 233AE2412BEFE9BC00371AF4 /* Build configuration list for PBXNativeTarget "LeafLinkLifeLine" */;
+			buildPhases = (
+				233AE2192BEFE9BB00371AF4 /* Sources */,
+				233AE21A2BEFE9BB00371AF4 /* Frameworks */,
+				233AE21B2BEFE9BB00371AF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeafLinkLifeLine;
+			productName = LeafLinkLifeLine;
+			productReference = 233AE21D2BEFE9BB00371AF4 /* LeafLinkLifeLine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		233AE22C2BEFE9BC00371AF4 /* LeafLinkLifeLineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 233AE2442BEFE9BC00371AF4 /* Build configuration list for PBXNativeTarget "LeafLinkLifeLineTests" */;
+			buildPhases = (
+				233AE2292BEFE9BC00371AF4 /* Sources */,
+				233AE22A2BEFE9BC00371AF4 /* Frameworks */,
+				233AE22B2BEFE9BC00371AF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				233AE22F2BEFE9BC00371AF4 /* PBXTargetDependency */,
+			);
+			name = LeafLinkLifeLineTests;
+			productName = LeafLinkLifeLineTests;
+			productReference = 233AE22D2BEFE9BC00371AF4 /* LeafLinkLifeLineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		233AE2362BEFE9BC00371AF4 /* LeafLinkLifeLineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 233AE2472BEFE9BC00371AF4 /* Build configuration list for PBXNativeTarget "LeafLinkLifeLineUITests" */;
+			buildPhases = (
+				233AE2332BEFE9BC00371AF4 /* Sources */,
+				233AE2342BEFE9BC00371AF4 /* Frameworks */,
+				233AE2352BEFE9BC00371AF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				233AE2392BEFE9BC00371AF4 /* PBXTargetDependency */,
+			);
+			name = LeafLinkLifeLineUITests;
+			productName = LeafLinkLifeLineUITests;
+			productReference = 233AE2372BEFE9BC00371AF4 /* LeafLinkLifeLineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		233AE2152BEFE9BB00371AF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					233AE21C2BEFE9BB00371AF4 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					233AE22C2BEFE9BC00371AF4 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 233AE21C2BEFE9BB00371AF4;
+					};
+					233AE2362BEFE9BC00371AF4 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 233AE21C2BEFE9BB00371AF4;
+					};
+				};
+			};
+			buildConfigurationList = 233AE2182BEFE9BB00371AF4 /* Build configuration list for PBXProject "LeafLinkLifeLine" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 233AE2142BEFE9BB00371AF4;
+			productRefGroup = 233AE21E2BEFE9BB00371AF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				233AE21C2BEFE9BB00371AF4 /* LeafLinkLifeLine */,
+				233AE22C2BEFE9BC00371AF4 /* LeafLinkLifeLineTests */,
+				233AE2362BEFE9BC00371AF4 /* LeafLinkLifeLineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		233AE21B2BEFE9BB00371AF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				233AE2282BEFE9BB00371AF4 /* Preview Assets.xcassets in Resources */,
+				233AE2252BEFE9BB00371AF4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		233AE22B2BEFE9BC00371AF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		233AE2352BEFE9BC00371AF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		233AE2192BEFE9BB00371AF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23474D272C06AD33004BB07A /* SinglePlantView.swift in Sources */,
+				23474D312C0E516D004BB07A /* ThreePlantView.swift in Sources */,
+				23474D3A2C0E5EFE004BB07A /* Settings.swift in Sources */,
+				23474D3E2C14A790004BB07A /* MultiplantView.swift in Sources */,
+				23474D1F2C054525004BB07A /* ZeroPlantView.swift in Sources */,
+				233AE25D2BF2DEC400371AF4 /* TextInputView.swift in Sources */,
+				23474D0B2C04C55B004BB07A /* CustomTabBar.swift in Sources */,
+				23474D332C0E59C8004BB07A /* FourPlantView.swift in Sources */,
+				23474D172C050FE4004BB07A /* userDM.xcdatamodeld in Sources */,
+				233AE25E2BF2DEC400371AF4 /* SecureInputView.swift in Sources */,
+				233AE2232BEFE9BB00371AF4 /* ContentView.swift in Sources */,
+				233AE2532BEFF43C00371AF4 /* appColor.swift in Sources */,
+				23474D0D2C04C5FD004BB07A /* MainHomeView.swift in Sources */,
+				23474D1B2C052328004BB07A /* CoreDataManager.swift in Sources */,
+				23474D142C04C6B1004BB07A /* MainView.swift in Sources */,
+				23474D292C074EEF004BB07A /* DetailPlantView.swift in Sources */,
+				23474D3C2C0FEAD8004BB07A /* HomeView.swift in Sources */,
+				23474D422C17A8D3004BB07A /* LaunchView.swift in Sources */,
+				23474D2B2C0A4552004BB07A /* PlantEnvObj.swift in Sources */,
+				23474D1D2C052F13004BB07A /* PlantViewModel.swift in Sources */,
+				233AE2522BEFF43C00371AF4 /* ImageOffset.swift in Sources */,
+				23474D102C04C639004BB07A /* AddPlantView.swift in Sources */,
+				23474D2D2C0A9BBA004BB07A /* TwoPlantView.swift in Sources */,
+				23474D2F2C0D52BB004BB07A /* CoreViewModel.swift in Sources */,
+				233AE25C2BF2DEC400371AF4 /* ButtonLabelView.swift in Sources */,
+				23474D212C054ABD004BB07A /* ImageChoiceView.swift in Sources */,
+				233AE2212BEFE9BB00371AF4 /* LeafLinkLifeLineApp.swift in Sources */,
+				23474D092C038893004BB07A /* WelcomeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		233AE2292BEFE9BC00371AF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				233AE2322BEFE9BC00371AF4 /* LeafLinkLifeLineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		233AE2332BEFE9BC00371AF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				233AE23E2BEFE9BC00371AF4 /* LeafLinkLifeLineUITestsLaunchTests.swift in Sources */,
+				233AE23C2BEFE9BC00371AF4 /* LeafLinkLifeLineUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		233AE22F2BEFE9BC00371AF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 233AE21C2BEFE9BB00371AF4 /* LeafLinkLifeLine */;
+			targetProxy = 233AE22E2BEFE9BC00371AF4 /* PBXContainerItemProxy */;
+		};
+		233AE2392BEFE9BC00371AF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 233AE21C2BEFE9BB00371AF4 /* LeafLinkLifeLine */;
+			targetProxy = 233AE2382BEFE9BC00371AF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		233AE23F2BEFE9BC00371AF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		233AE2402BEFE9BC00371AF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		233AE2422BEFE9BC00371AF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LeafLinkLifeLine/Preview Content\"";
+				DEVELOPMENT_TEAM = 5AB9PN6J3H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MintelligentDesign.LeafLinkLifeLine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		233AE2432BEFE9BC00371AF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LeafLinkLifeLine/Preview Content\"";
+				DEVELOPMENT_TEAM = 5AB9PN6J3H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MintelligentDesign.LeafLinkLifeLine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		233AE2452BEFE9BC00371AF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5AB9PN6J3H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MintelligentDesign.LeafLinkLifeLineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeafLinkLifeLine.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LeafLinkLifeLine";
+			};
+			name = Debug;
+		};
+		233AE2462BEFE9BC00371AF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5AB9PN6J3H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MintelligentDesign.LeafLinkLifeLineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeafLinkLifeLine.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LeafLinkLifeLine";
+			};
+			name = Release;
+		};
+		233AE2482BEFE9BC00371AF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5AB9PN6J3H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MintelligentDesign.LeafLinkLifeLineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LeafLinkLifeLine;
+			};
+			name = Debug;
+		};
+		233AE2492BEFE9BC00371AF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5AB9PN6J3H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MintelligentDesign.LeafLinkLifeLineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LeafLinkLifeLine;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		233AE2182BEFE9BB00371AF4 /* Build configuration list for PBXProject "LeafLinkLifeLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				233AE23F2BEFE9BC00371AF4 /* Debug */,
+				233AE2402BEFE9BC00371AF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		233AE2412BEFE9BC00371AF4 /* Build configuration list for PBXNativeTarget "LeafLinkLifeLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				233AE2422BEFE9BC00371AF4 /* Debug */,
+				233AE2432BEFE9BC00371AF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		233AE2442BEFE9BC00371AF4 /* Build configuration list for PBXNativeTarget "LeafLinkLifeLineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				233AE2452BEFE9BC00371AF4 /* Debug */,
+				233AE2462BEFE9BC00371AF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		233AE2472BEFE9BC00371AF4 /* Build configuration list for PBXNativeTarget "LeafLinkLifeLineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				233AE2482BEFE9BC00371AF4 /* Debug */,
+				233AE2492BEFE9BC00371AF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		23474D152C050FE4004BB07A /* userDM.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				23474D162C050FE4004BB07A /* userDM.xcdatamodel */,
+			);
+			currentVersion = 23474D162C050FE4004BB07A /* userDM.xcdatamodel */;
+			name = userDM.xcdatamodeld;
+			path = /Users/markmintel/Desktop/Repos/PlantHealth/LeafLinkLifeLine/LeafLinkLifeLine/Models/userDM.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 233AE2152BEFE9BB00371AF4 /* Project object */;
+}
