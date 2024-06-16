@@ -24,17 +24,9 @@ struct MainHomeView: View {
                 
                 SinglePlantView(plant: user_plants.plants[0]).environment(user_plants)
                 
-            } else if user_plants.plants.count == 2 {
+            } else if user_plants.plants.count > 1 {
                 
-                TwoPlantView().environment(user_plants)
-                
-            } else if user_plants.plants.count == 3 {
-                
-                ThreePlantView().environment(user_plants)
-                
-            } else if user_plants.plants.count == 4 {
-                
-                FourPlantView().environment(user_plants)
+                MultiplantView().environment(user_plants)
                 
             }
         }.tint(.white)
