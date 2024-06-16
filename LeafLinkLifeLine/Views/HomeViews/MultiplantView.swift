@@ -18,67 +18,74 @@ struct MultiplantView: View {
     @State var moisture_2 = ""
     @State var moisture_3 = ""
     
+    let layout = [
+        GridItem(.flexible(minimum: 150)),
+        GridItem(.flexible(minimum: 150))
+    ]
+    
     var body: some View {
-        
+
         
         ZStack {
             appColor.mainColor.ignoresSafeArea()
-            ScrollView {
+            ScrollView(.vertical) {
                 Text("Welcome \(name)")
-                    .font(.system(size: 25))
-                    .offset(y: 5)
-                HStack {
+                    .font(.title)
+                
+                LazyVGrid(columns: layout) {
                     ForEach(user_plants.plants, id: \.self) { plant in
-                        
                         VStack {
                             NavigationLink(destination: SinglePlantView(plant: plant).environment(user_plants)) {
-                                Image(plant.icon!)
-                                    .resizable()
-                                    .frame(height: 150)
-                                    .offset(x: CGFloat(Offset(icon_name: plant.icon!).offset))
+                                    Image(plant.icon!)
+                                        .resizable()
+                                        .frame(height: 150)
+                                        .offset(x: CGFloat(Offset(icon_name: plant.icon!).offset))
                             }
                             
                             Text(plant.name!)
                             Text(plant.moisture!)
-
                         }
                     }
                     Spacer()
                 }
+                
                 Button(action: {
-                    Task {
-                        for plant in user_plants.plants {
-                            var command = plant.pipe_id!
-                            command = "read" + command
-                            await sendCommand(command)
-                            
-                            if command.contains("0") {
-                                plant.moisture = moisture_0
-                            } else if command.contains("1") {
-                                plant.moisture = moisture_0
-                            } else if command.contains("2") {
-                                plant.moisture = moisture_0
-                            } else if command.contains("3") {
-                                plant.moisture = moisture_0
-                            } else {
-                                self.message = "Something went wrong"
+                        Task {
+                            for plant in user_plants.plants {
+                                var command = plant.pipe_id!
+                                command = "read" + command
+                                await sendCommand(command)
+                
+                                if command.contains("0") {
+                                    plant.moisture = moisture_0
+                                } else if command.contains("1") {
+                                    plant.moisture = moisture_1
+                                } else if command.contains("2") {
+                                    plant.moisture = moisture_2
+                                } else if command.contains("3") {
+                                    plant.moisture = moisture_3
+                                } else {
+                                    self.message = "Something went wrong"
+                                }
+                                user_plants.updatePlant(plant: plant)
                             }
-                            user_plants.updatePlant(plant: plant)
+                
                         }
-                        
+                    }) {
+                        Image(systemName: "wifi.circle.fill")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                            .foregroundColor(.orange)
                     }
-                }) {
-                    Image(systemName: "wifi.circle.fill")
-                        .resizable()
-                        .frame(width: 50, height: 50)
-                        .foregroundColor(.orange)
-                }
-                Text("Refresh Readings")
-                    .foregroundColor(.white)
+                    Text("Refresh Readings")
+                        .foregroundColor(.white)
+                
+
             }
         }
         
     }
+    
     func sendCommand(_ command: String) async {
             let urlString = "http://raspberrypi.local:5000/\(command)"
             guard let url = URL(string: urlString) else {
