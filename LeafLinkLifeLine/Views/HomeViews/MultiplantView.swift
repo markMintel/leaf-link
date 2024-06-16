@@ -29,6 +29,9 @@ struct MultiplantView: View {
         ZStack {
             appColor.mainColor.ignoresSafeArea()
             ScrollView(.vertical) {
+                Text("Welcome \(name)")
+                    .font(.title)
+                
                 LazyVGrid(columns: layout) {
                     ForEach(user_plants.plants, id: \.self) { plant in
                         VStack {
