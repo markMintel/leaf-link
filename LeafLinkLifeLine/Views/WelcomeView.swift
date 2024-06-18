@@ -17,7 +17,7 @@ struct WelcomeView: View {
     var body: some View {
         
         if userIsLoggedIn {
-            MainView()
+            LandingView()
         } else {
             ZStack {
                 appColor.mainColor.ignoresSafeArea()

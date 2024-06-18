@@ -55,23 +55,6 @@ struct Settings: View {
                         .padding()
                 }
                 
-                
-                //Spacer()
-//                Button {
-//                    shouldShowLogOutOptions.toggle()
-//                } label: {
-//                    HStack {
-//                        Spacer()
-//                        Text("Log Out")
-//                            .foregroundColor(.white)
-//                            .padding(.vertical, 10)
-//                            .font(.system(size: 18, weight: .semibold))
-//                        Spacer()
-//                    }
-//                    .background(Color.red)
-//                    .cornerRadius(25)
-//                    .frame(width:300)
-//                }
                 if is_first_name || is_last_name {
                     Button {
                         if self.new_first_name != "" {
@@ -95,17 +78,7 @@ struct Settings: View {
                             .cornerRadius(50)
                     }
                 }
-            }//End Vstack
-//            .actionSheet(isPresented: $shouldShowLogOutOptions) {
-//                .init(title: Text("Settings"), message: Text("What do you want to do?"), buttons: [
-//                    .destructive(Text("Sign Out"), action: {
-//                        print("handle sign out")
-//                        try? Auth.auth().signOut()
-//                        self.isUserCurrentlyLoggedOut = false
-//                    }),
-//                    .cancel()
-//                ])
-//            }
+            }
         }
     }
     

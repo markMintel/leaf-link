@@ -75,12 +75,7 @@ struct DetailPlantView: View {
                             .frame(width: 200)
                             .cornerRadius(20)
                     }
-//                    NavigationLink(destination: ImageChoiceView(imageChoice: $newIcon).environment(user_plants),
-//                                   label: {
-//                                        ButtonLabelView(text: "Change Picture")
-//                                            .frame(width: 200)
-//                                            .cornerRadius(20)
-//                    })
+
                     
                     Button {
                         deleteConfirmation.toggle()
@@ -134,10 +129,10 @@ struct DetailPlantView: View {
                         }
                     }
                 }
-            }//end Zstack
+            }
             .confirmationDialog("Delete Plant?", isPresented: $deleteConfirmation) {
                 Button {
-                    //user_plants.deletePlant(plant: plant)
+                    
                     deleteConfirmed = true
                     dismiss()
                 } label: {Text("Confirm")}

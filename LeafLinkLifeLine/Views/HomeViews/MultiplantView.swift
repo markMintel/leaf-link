@@ -29,6 +29,7 @@ struct MultiplantView: View {
         ZStack {
             appColor.mainColor.ignoresSafeArea()
             ScrollView(.vertical) {
+                Spacer()
                 Text("Welcome \(name)")
                     .font(.title)
                 
